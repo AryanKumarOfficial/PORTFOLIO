@@ -16,6 +16,9 @@ nav {
     align-items: center;
     height: 80px;
     background-color: rgb(18, 18, 62);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav .right ul {
@@ -58,7 +61,6 @@ section.firstsection>div {
 section.firstsection .leftsection {
     width: 50%;
     font-size: 3rem;
-    /* margin: 70px 0; */
 }
 
 section.firstsection .leftsection .buttons {
@@ -76,9 +78,7 @@ section.firstsection .leftsection .btn {
 }
 
 section.firstsection .rightsection img {
-    /* some styles */
     width: 80%;
-    /* margin: 50px 0; */
 }
 
 #element {
@@ -117,14 +117,165 @@ section.firstsection .rightsection img {
     left: -13px;
 }
 
+#about {
+    padding: 80px 0;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 80px 0;
+}
+
+.projects-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-container h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    text-align: center;
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+}
+
+#contact {
+    padding: 80px 0;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0069d9;
+}
+
 footer {
     background-color: #0e0e1a;
-    /* height: 233px; */
 }
 
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 23px 122px;
 }
 
@@ -142,7 +293,54 @@ footer .footer-rights {
     padding: 11px 0;
 }
 
-/* Utilities */
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #a0a0a0;
+}
+
+.footer .third ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer .third ul li a:hover {
+    color: #a0a0a0;
+}
+
+.footer .third ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.footer .third ul li a.facebook:before {
+    background-image: url("/images/facebook-icon.png");
+}
+
+.footer .third ul li a.instagram:before {
+    background-image: url("/images/instagram-icon.png");
+}
+
+.footer .third ul li a.twitter:before {
+    background-image: url("/images/twitter-icon.png");
+}
+
+.footer .third ul li a.github:before {
+    background-image: url("/images/github-icon.png");
+}
 
 .text-purple {
     color: rgb(170, 107, 228);
@@ -152,7 +350,6 @@ footer .footer-rights {
     color: gray;
 }
 
-
 main hr {
     border: 0;
     height: 1px;
@@ -160,12 +357,12 @@ main hr {
     margin: 60px 84px;
 }
 
-
 .vertical-title {
     position: relative;
     top: 75px;
     width: 175px;
     color: rebeccapurple;
+    font-size: small;
 }
 
 .vertical-desc {

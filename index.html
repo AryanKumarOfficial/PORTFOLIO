@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aryan - Developer POrtfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta
+      name="description"
+      content="Aryan is a web developer and graphic designer, skilled in HTML, CSS, JavaScript, and more. Explore his portfolio and projects."
+    />
+    <title>Aryan - Web Developer and Graphic Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
@@ -13,78 +17,89 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header>
       <nav>
-        <div class="left">Aryan,s Portfolio</div>
+        <div class="left">Aryan's Portfolio</div>
         <div class="right">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- Main -->
-
     <main>
-      <section class="firstsection">
+      <section id="home" class="firstsection">
         <div class="leftsection">
-          Hi, My name is <span class="text-purple"> Aryan</span>
-          <div>and I am a passionate</div>
+          Hi, my name is <span class="text-purple">Aryan</span>
+          <div>I am a web developer and graphic designer.</div>
           <span id="element"></span>
           <div class="buttons">
-            <button onclick="download()" class="btn">Download Resume</button>
-            <button onclick="handleGithub()" class="btn">Visit Github</button>
+            <button onclick="downloadResume()" class="btn">
+              Download Resume
+            </button>
+            <button onclick="visitGithub()" class="btn">Visit Github</button>
           </div>
         </div>
         <div class="rightsection">
-          <img src="/images/bg.png" alt="" />
+          <img src="/images/bg.png" alt="Background Image" />
         </div>
       </section>
       <hr />
-      <section class="secondsection">
-        <span class="text-gray">What I have done so far</span>
-        <h1>Work Experience</h1>
+      <section id="services" class="secondsection">
+        <span class="text-gray">What I offer</span>
+        <h1>Services</h1>
         <div class="box">
           <div class="vertical">
-            <img class="image-top" src="/images/html.jpg" alt="" />
-            <div class="vertical-title">HTML Developer (0000-0000)</div>
+            <img
+              class="image-top"
+              src="/images/html.jpg"
+              alt="HTML Developer"
+            />
+            <div class="vertical-title">Web Development</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              maxime itaque modi sint magni at, velit iste ad minus impedit
-              doloribus error!
+              I specialize in creating responsive and user-friendly websites
+              using HTML, CSS, and JavaScript. I can build static websites or
+              dynamic web applications according to your requirements.
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="/images/css.png" alt="" />
-            <div class="vertical-title">HTML Developer (0000-0000)</div>
+            <img class="image-top" src="/images/css.png" alt="CSS Developer" />
+            <div class="vertical-title">Web Design</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              maxime itaque modi sint magni at, velit iste ad minus impedit
-              doloribus error!
+              I have an eye for design and can create visually appealing website
+              layouts using modern CSS techniques and frameworks. I focus on
+              creating intuitive user interfaces and seamless user experiences.
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="/images/node.png" alt="" />
-            <div class="vertical-title">HTML Developer (0000-0000)</div>
+            <img
+              class="image-top"
+              src="/images/node.png"
+              alt="Node.js Developer"
+            />
+            <div class="vertical-title">Backend Development</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              maxime itaque modi sint magni at, velit iste ad minus impedit
-              doloribus error!
+              With my knowledge of Node.js, I can handle server-side programming
+              and develop robust backend systems for your web applications. I
+              can work with databases, APIs, and server deployment.
             </div>
           </div>
           <div class="vertical">
-            <img class="image-top" src="/images/react.png" alt="" />
-            <div class="vertical-title">HTML Developer (0000-0000)</div>
+            <img
+              class="image-top"
+              src="/images/react.png"
+              alt="React Developer"
+            />
+            <div class="vertical-title">Frontend Development</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              maxime itaque modi sint magni at, velit iste ad minus impedit
-              doloribus error!
+              I am proficient in React.js and can build interactive and dynamic
+              user interfaces. Whether it's a single-page application or a
+              complex web app, I can create engaging frontend experiences.
             </div>
           </div>
           <div class="vertical">
@@ -92,14 +107,105 @@
               style="filter: invert(100%)"
               class="image-top"
               src="/images/next.png"
-              alt=""
+              alt="Next.js Developer"
             />
-            <div class="vertical-title">HTML Developer (0000-0000)</div>
+            <div class="vertical-title">Full Stack Development</div>
             <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              maxime itaque modi sint magni at, velit iste ad minus impedit
-              doloribus error!
+              I have expertise in both frontend and backend development, making
+              me capable of handling end-to-end web development projects. I can
+              create complete web solutions using modern technologies.
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-container">
+          <h1>About Me</h1>
+          <div class="about-content">
+            <div class="profile-pic">
+              <img src="/images/profile.png" alt="Profile Picture" />
+            </div>
+            <div class="about-text">
+              <p>
+                I am Aryan, a web developer and graphic designer passionate
+                about creating exceptional digital experiences. With several
+                years of experience in the field, I have honed my skills in
+                HTML, CSS, JavaScript, and other web technologies. I strive to
+                combine creativity with technical expertise to deliver visually
+                appealing and functional websites that leave a lasting
+                impression on users.
+              </p>
+              <p>
+                I enjoy working on diverse projects and collaborating with
+                clients to bring their ideas to life. My goal is to create
+                intuitive user interfaces, engaging visuals, and seamless user
+                experiences. Whether it's a small business website, a personal
+                blog, or a complex web application, I am dedicated to delivering
+                high-quality solutions that meet the unique requirements of each
+                project.
+              </p>
+              <p>
+                Constantly staying updated with the latest trends and
+                technologies, I am committed to continuous learning and
+                improvement. I believe in the power of teamwork and effective
+                communication in achieving successful outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects-container">
+          <h1>Projects</h1>
+          <div class="project-card">
+            <img src="/images/developer.png" alt="Project 1" />
+            <div class="project-info">
+              <h2>Personal Blog Website</h2>
+              <p>
+                A responsive blog website built with HTML, CSS, and JavaScript.
+                It features an elegant design and showcases various articles on
+                technology and web development.
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/developer.png" alt="Project 2" />
+            <div class="project-info">
+              <h2>E-commerce Store</h2>
+              <p>
+                An online store built with React and Node.js, offering a wide
+                range of products. It includes features such as product search,
+                shopping cart, and secure payment integration.
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="/images/developer.png" alt="Project 3" />
+            <div class="project-info">
+              <h2>Social Media App</h2>
+              <p>
+                A social media platform built with MERN stack (MongoDB,
+                Express.js, React, and Node.js). Users can create profiles,
+                connect with friends, share posts, and interact with other
+                users.
+              </p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact-container">
+          <h1>Contact Me</h1>
+          <div class="contact-form">
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn">Send Message</button>
           </div>
         </div>
       </section>
@@ -108,34 +214,31 @@
     <footer>
       <div class="footer">
         <div class="first">
-          <h3>Aryan' Developer Portfolio</h3>
+          <h3>Aryan's Developer Portfolio</h3>
         </div>
         <div class="second">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
         <div class="third">
           <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Github</li>
+            <li><a href="#" class="facebook">Facebook</a></li>
+            <li><a href="#" class="instagram">Instagram</a></li>
+            <li><a href="#" class="twitter">Twitter</a></li>
+            <li><a href="#" class="github">Github</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-rights">
-        Copyright &#169; aryansdevportfolio.com | All Rights Reserved
+        &copy; 2023 Aryan's Developer Portfolio | All Rights Reserved
       </div>
     </footer>
 
-    <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- Setup and start animation! -->
     <script>
       var typed = new Typed("#element", {
         strings: [
@@ -148,10 +251,10 @@
       });
     </script>
     <script>
-      function handleGithub() {
+      function visitGithub() {
         window.open("https://www.github.com/Aryan-ji");
       }
-      function download() {
+      function downloadResume() {
         var link = document.createElement("a");
         link.href = "/resume.pdf"; // Replace with the actual file URL
         link.download = "resume.pdf"; // Replace with the desired filename
