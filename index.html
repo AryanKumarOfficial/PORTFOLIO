@@ -38,8 +38,8 @@
           <div>and I am a passionate</div>
           <span id="element"></span>
           <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn">Visit Github</button>
+            <button onclick="download()" class="btn">Download Resume</button>
+            <button onclick="handleGithub()" class="btn">Visit Github</button>
           </div>
         </div>
         <div class="rightsection">
@@ -146,6 +146,19 @@
         ],
         typeSpeed: 50,
       });
+    </script>
+    <script>
+      function handleGithub() {
+        window.open("https://www.github.com");
+      }
+      function download() {
+        var link = document.createElement("a");
+        link.href = "/resume.pdf"; // Replace with the actual file URL
+        link.download = "resume.pdf"; // Replace with the desired filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
     </script>
   </body>
 </html>
