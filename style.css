@@ -1,3 +1,5 @@
+/* unversal selectors */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
 }
+
+/* navbar */
 
 nav {
     display: flex;
@@ -49,8 +53,12 @@ nav .left {
     font-size: 1.5rem;
 }
 
+/* Main */
+/* first section */
+
 section.firstsection {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin: 150px 0px;
@@ -83,9 +91,13 @@ section.firstsection .rightsection img {
     width: 80%;
 }
 
+/* typed js */
+
 #element {
     color: rgb(170, 170, 228);
 }
+
+/* second section */
 
 .secondsection {
     max-width: 80vw;
@@ -118,6 +130,8 @@ section.firstsection .rightsection img {
     top: -25px;
     left: -13px;
 }
+
+/* about */
 
 #about {
     padding: 80px 0;
@@ -163,6 +177,8 @@ section.firstsection .rightsection img {
 .about-text p {
     margin-bottom: 20px;
 }
+
+/* Projects */
 
 #projects {
     padding: 80px 0;
@@ -220,6 +236,8 @@ section.firstsection .rightsection img {
     background-color: #0069d9;
 }
 
+/* Contact */
+
 #contact {
     padding: 80px 0;
 }
@@ -271,6 +289,8 @@ section.firstsection .rightsection img {
     background-color: #0069d9;
 }
 
+/* footer */
+
 footer {
     background-color: #0e0e1a;
 }
@@ -305,6 +325,7 @@ footer .footer-rights {
     color: #a0a0a0;
 }
 
+
 .footer .third ul li a {
     color: #fff;
     text-decoration: none;
@@ -329,20 +350,22 @@ footer .footer-rights {
 }
 
 .footer .third ul li a.facebook:before {
-    background-image: url("/images/facebook-icon.png");
+    background-image: url("/images/facebook.png");
 }
 
 .footer .third ul li a.instagram:before {
-    background-image: url("/images/instagram-icon.png");
+    background-image: url("/images/instagram.png");
 }
 
 .footer .third ul li a.twitter:before {
-    background-image: url("/images/twitter-icon.png");
+    background-image: url("/images/twitter.png");
 }
 
 .footer .third ul li a.github:before {
-    background-image: url("/images/github-icon.png");
+    background-image: url("/images/github.png");
 }
+
+/* Utilities */
 
 .text-purple {
     color: rgb(170, 107, 228);
