@@ -36,7 +36,7 @@
       <section id="home" class="firstsection">
         <div class="leftsection">
           Hi, my name is <span class="text-purple">Aryan</span>
-          <div>I am a web developer and graphic designer.</div>
+          <div>I am a passionate</div>
           <span id="element"></span>
           <div class="buttons">
             <button onclick="downloadResume()" class="btn">
@@ -237,31 +237,8 @@
         &copy; 2023 Aryan's Developer Portfolio | All Rights Reserved
       </div>
     </footer>
-
+    <!-- scripts -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Web Developer",
-          "Graphic Designer",
-          "Web Designer",
-          "Python Developer",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
-    <script>
-      function visitGithub() {
-        window.open("https://www.github.com/Aryan-ji");
-      }
-      function downloadResume() {
-        var link = document.createElement("a");
-        link.href = "/resume.pdf"; // Replace with the actual file URL
-        link.download = "resume.pdf"; // Replace with the desired filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
