@@ -1,7 +1,14 @@
 @media screen and (max-width: 1500px) {
+    body {
+        overflow-x: hidden;
+    }
 
     nav {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
     }
 
 
@@ -31,15 +38,135 @@
     }
 
     .secondsection .box {
-        width: 30vw;
+        width: 40vw;
     }
 
     .secondsection .vertical {
+        position: relative;
+        top: 0;
         height: unset;
+    }
+
+    .secondsection .vertical img {
+        position: relative;
+        top: 30px;
     }
 
     .vertical-title,
     .vertical-desc {
         left: 45px;
+        top: 0;
+    }
+
+    .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about {
+        position: relative;
+        top: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .about-content .profile-pic {
+        margin: 100px auto;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        position: relative;
+        top: 30rem;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /* #projects p {
+        margin: 0 auto;
+        text-align: justify;
+        position: relative;
+        align-items: center;
+        left: -60px;
+    }
+
+    #projects a {
+        margin: 20px auto;
+        text-align: center;
+    } */
+
+    #contact {
+        position: relative;
+        top: 22rem;
+    }
+
+    footer{
+        position: relative;
+        top: 30rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        position: relative;
+        justify-content: space-evenly;
+
+    }
+
+    .footer .first {
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        left: -60px;
+    }
+
+    .footer .second {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        left: -60px;
+    }
+
+    .footer .third {
+        margin-bottom: 2rem;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        left: -60px;
+    }
+
+    main hr {
+        width: 90%;
     }
 }

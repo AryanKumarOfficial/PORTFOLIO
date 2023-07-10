@@ -102,7 +102,7 @@ section.firstsection .rightsection img {
 .secondsection {
     max-width: 80vw;
     margin: auto;
-    height: 95vh;
+    height: 55vh;
 }
 
 .secondsection h1 {
@@ -134,7 +134,7 @@ section.firstsection .rightsection img {
 /* about */
 
 #about {
-    padding: 80px 0;
+    padding: 10px 0;
 }
 
 .about-container {
@@ -351,18 +351,26 @@ footer .footer-rights {
 
 .footer .third ul li a.facebook:before {
     background-image: url("/images/facebook.png");
+    position: relative;
+    top: 5px;
 }
 
 .footer .third ul li a.instagram:before {
     background-image: url("/images/instagram.png");
+    position: relative;
+    top: 5px;
 }
 
 .footer .third ul li a.twitter:before {
     background-image: url("/images/twitter.png");
+    position: relative;
+    top: 5px;
 }
 
 .footer .third ul li a.github:before {
     background-image: url("/images/github.png");
+    position: relative;
+    top: 5px;
 }
 
 /* Utilities */
